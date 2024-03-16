@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  width: 100vw;
+}
+body{
+  background-color: rgb(3, 45, 69);
+}
+.nav{
+  transition: all 0.4s ease;
+}
+.nav.scrolled{
+  background-color: rgba(9, 9, 9, 0.761);
+  color:white;
+}
+.red{
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 450px) {
+  body{
+    overflow-x: hidden;
+  }
+  .container{
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .nav{
+    width: 90vw;
+  }
+  .nav ul{
+    gap: 60px;
+  }
+  .card{
+    height: 600px;
+  }
+  .image{
+    height: 200px;
+  }
+  .content ul :nth-child(1){
+    height: 60px;
+    font-size: 15px;
+  }
+  .lead{
+    margin-top: 75px;
+  }
+  .total{
+    display: none;
+  }
+  .box1{
+    width: 100%;
+  }
+  .cartImg{
+    width: 60%;
+  }
+  .btns{
+    width: 40%;
+    justify-content: space-around;
+  }
+  .quantity{
+    width: 80%;
+  }
+  .CartContent{
+    display: none;
+  }
+}
